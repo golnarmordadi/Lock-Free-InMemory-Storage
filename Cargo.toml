@@ -1,0 +1,25 @@
+[package]
+name = "lock_free_in_memory_storage"
+version = "0.1.0"
+authors = ["golnarmordadi@gmail.com"]
+edition = "2021"
+description = "A lock-free, thread-safe, in-memory storage system in Rust."
+license = "MIT"
+repository = "https://github.com/golnarmordadi/Lock-Free-InMemory-Storage.git"
+
+[dependencies]
+# Crossbeam for lock-free data structures and concurrency primitives
+crossbeam = "0.8"
+
+# Optional: ArrayVec for in-memory array storage optimization
+arrayvec = "0.7"
+
+# Optional: SmallVec for space-efficient in-memory storage
+smallvec = "1.11"
+
+[dev-dependencies]
+# Testing utilities
+rand = "0.8" # For generating random numbers in tests if needed
+
+[features]
+default = []
